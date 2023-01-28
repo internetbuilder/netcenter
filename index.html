@@ -3,7 +3,34 @@
     <title>NetCenter.ca - Mobile & Internet</title> 
      <meta name="description" content="Service Mobile & Internet">
     <style>*{margin:0;padding:0;} html,body,#wrapper{width:100%;height:100%;} iframe{border-radius:0 !important;}</style> 
-  <!-- Google tag (gtag.js) -->
+    <script type="text/javascript">
+      (function() {
+          window.sib = {
+              equeue: [],
+              client_key: "1sai27k8l7yld5iwbltazsiq"
+          };
+          /* OPTIONAL: email for identify request*/
+          // window.sib.email_id = 'example@domain.com';
+          window.sendinblue = {};
+          for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {
+          (function(k) {
+              window.sendinblue[k] = function() {
+                  var arg = Array.prototype.slice.call(arguments);
+                  (window.sib[k] || function() {
+                          var t = {};
+                          t[k] = arg;
+                          window.sib.equeue.push(t);
+                      })(arg[0], arg[1], arg[2]);
+                  };
+              })(j[i]);
+          }
+          var n = document.createElement("script"),
+              i = document.getElementsByTagName("script")[0];
+              n.type = "text/javascript", n.id = "sendinblue-js",
+              n.async = !0, n.src = "https://sibautomation.com/sa.js?key="+ window.sib.client_key,
+              i.parentNode.insertBefore(n, i), window.sendinblue.page();
+      })();
+      </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0N24G090F"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,8 +42,19 @@
 </head> 
   <body> 
     <div data-tf-widget="L7gDpTKZ" id="wrapper" data-tf-opacity="100" data-tf-inline-on-mobile data-tf-iframe-props="title=NetCenter" data-tf-transitive-search-params data-tf-auto-focus data-tf-medium="snippet"></div><script src="//embed.typeform.com/next/embed.js"></script>
-  <!--
-        <img src="https://netcenter.ca/images/logo.png" alt="NetCenter.ca - Mobile & Internet" width="1px" height="1px">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="google"><i class="fa fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+  <img src="https://netcenter.ca/images/logo.png" alt="NetCenter.ca - Mobile & Internet" width="1px" height="1px">
+    <!--
+        
       --> 
   </body>
     </html>
